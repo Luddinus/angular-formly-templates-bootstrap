@@ -257,6 +257,12 @@ _Example radio field_
 ##### groupProp (string, optional)
 >`groupProp` is what is used to group the options
 
+##### notNull (boolean, optional)
+>`notNull` whether to add an empty null option
+
+##### nullDisplay (string, optional)
+>`nullDisplay` Null option label
+
 ##### optionsAttr (string, optional)
 >`optionsAttr` is what is used as the attribute ngOptions will be applied to. Defaults to `ng-options`
 
@@ -273,6 +279,8 @@ _Example select field_
   "templateOptions": {
     "label": "How do you get around in the city",
     "valueProp": "name",
+    "notNull": true,
+    "displayNull": "-- Choose a vehicle --",
     "options": [
       {
         "name": "Car"
