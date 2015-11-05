@@ -25,7 +25,9 @@ export default  ngModule => {
           optionsAttr: check.string.optional,
           labelProp: check.string.optional,
           valueProp: check.string.optional,
-          groupProp: check.string.optional
+          groupProp: check.string.optional,
+          notNull: check.boolean.optional,
+          nullDisplay: check.string.optional
         }
       })
     });
